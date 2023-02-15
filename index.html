@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./imagenes/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="./estilo.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./imagenes/Logo.jpg" alt="logo del salon">
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./imagenes/carrito-de-compras.png" alt="carrito de compra">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/1.jpg" alt="acondicionador">
+                    <p><span>20.990</span>$</p>
+                </div>
+                <p class="title">Acondicionador con ácido hialurónico para todo tipo de cabello rubio. (250 ml)</p>
+                <a href="" data-id="1" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/Acondicionador ker(1).jpg" alt="acondicionador">
+                    <p><span>27.250</span>$</p>
+                </div>
+                <p class="title"> Acondicionador fortificante para cabellos propensos a la caída del cabello. (250 ml) </p>
+                <a href="" class="btn-add-cart" data-id="2">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/acondicionador.jpg" alt="acondicionador">
+                    <p><span>22.500</span>$</p>
+                </div>
+                <p class="title"> Acondicionador ligero que repone la humedad para el cabello rizado y muy rizado (250 ml)</p>
+                <a href="" data-id="3" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/sham kerastase(1).jpg" alt="shampoo">
+                    <p><span>32.290</span>$</p>
+                </div>
+                <p class="title"> Shampoo potenciador del grosor para cabello debilitado con tendencia a afinarse. (250 ml)</p>
+                <a href="" data-id="4" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/sham kerastase.jpg" alt="shampoo">
+                    <p><span>39.990</span>$</p>
+                </div>
+                <p class="title"> Shampoo purificador y fortificante para cabello debilitado con tendencia a la caída. (250 ml)</p>
+                <a href="" data-id="5" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/shamp.jpg" alt="shampoo">
+                    <p><span>38.960</span>$</p>
+                </div>
+                <p class="title"> El shampoo púrpura con ácido hialurónico neutraliza el cabello amarillento. (250 ml)</p>
+                <a href="" data-id="6" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/shampo.jpg" alt="shampoo">
+                    <p><span>35.490</span>$</p>
+                </div>
+                <p class="title"> Shampoo fortalecedor de cabellos largos para cabellos dañados y de crecimiento lento. (250 ml)</p>
+                <a href="" data-id="7" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/shampo(1).jpg" alt="shampoo">
+                    <p><span>35.990</span>$</p>
+                </div>
+                <p class="title"> Shampoo reconstructor para cabello débil y dañado. (250 ml)</p>
+                <a href="" data-id="8" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/shampoo kerastase.jpg" alt="shampoo">
+                    <p><span>32.990</span>$</p>
+                </div>
+                <p class="title"> Shampoo con ácido hialurónico para todo tipo de cabello rubio. (250 ml) </p>
+                <a href="" data-id="9" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/shampoo kerastase (1).jpg" alt="shampoo">
+                    <p><span>33.490</span>$</p>
+                </div>
+                <p class="title"> Shampoo con ácido hialurónico para todo tipo de cabello rubio. (500 ml)</p>
+                <a href="" data-id="10" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/kerastase.jpg" alt="shampoo">
+                    <p><span>39.490</span>$</p>
+                </div>
+                <p class="title"> Shampoo protector del color con aminoácidos para todo tipo de cabello teñido de fino a medio. (250 ml)</p>
+                <a href="" data-id="11" class="btn-add-cart">agregar al carro</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/kerastase(1).jpg" alt="shampoo">
+                    <p><span>37.890</span>$</p>
+                </div>
+                <p class="title"> Shampoo protector del color con aminoácidos para todo tipo de cabello teñido de fino a medio. (500 ml)</p>
+                <a href="" data-id="12" class="btn-add-cart">agregar al carro</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100054541745537" target="_blank"><img src="./imagenes/facebook.png" alt="icono de facebook"></a>
+            <a href="https://www.instagram.com/salon_touch/?hl=es-la" target="_blank"><img src="./imagenes/instagram.png" alt="icono de instagram"></a>
+            <a href="" target="_blank"><img src="./imagenes/whatsapp.png" alt="icono de whatsapp"></a>
+        </div>
+        <div class="copy">
+            <h6>
+                &copy Salon de belleza Touch 2022.
+                Todos los derechos reservados
+            </h6>
+        </div>
+    </footer>
+
+    <script src="./funcionalidad.js"></script>
+    <script src="./main.js" ></script>
+</body>
+</html>
